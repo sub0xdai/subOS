@@ -25,7 +25,7 @@ kernel.elf: $(OBJECTS)
 	$(AS) $(ASFLAGS) $< -o $@
 
 run: all
-	qemu-system-i386 -cdrom subOS.iso
+	qemu-system-i386 -cdrom subOS.iso -display curses
 
 clean:
 	rm -rf $(OBJECTS) kernel.elf subOS.iso iso

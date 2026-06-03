@@ -9,7 +9,7 @@ ata0-master: type=cdrom, path=fabiOS.iso, status=inserted
 boot: cdrom
 
 log: bochslog.txt
-clock: sync=realtime, time0=local
+clock: sync=slowed, time0=local
 
 cpu: count=1, ips=10000000, reset_on_triple_fault=0
 
